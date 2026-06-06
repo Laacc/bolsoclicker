@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bolsoclicker</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="coluna-esquerda">
+        <p>{{pontos}} pontos</p>
+        <p>{{ppc}} pontos por clique</p>
+        <p>{{pps}} pontos por segundo</p>
+        <form action="/clicar" method="POST">
+        <button>botão clique</button>
+        </form>
+    </div>
+    <div class="coluna-centro">
+        <form action="/salvar" method="POST">
+        <button>botão save</button>
+        </form>
+    </div>
+    <div class="coluna-direita">
+        <h3>loja</h3>
+        <form action="/comprar/ativo01" method="POST">
+        <button>upgrade ativo01 - preço: 30</button>
+        </form>
+        <form action="/comprar/passivo01" method="POST">
+        <button>upgrade passivo01 - preço: 100</button>
+        </form>
+        <form action="/comprar/augment_c_01" method="POST">
+        <button>augment (ativo01) - preço: 1500</button>
+        </form>
+        <form action="/comprar/augment_p_01" method="POST">
+        <button>augment (passivo01) - preço: 2000</button>
+        </form>
+    </div>
+    </body>
+</html>

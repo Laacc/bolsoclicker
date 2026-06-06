@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+.coluna-esquerda {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
+.coluna-centro {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
+.coluna-direita {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+}
